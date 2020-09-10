@@ -1,5 +1,5 @@
 {
-    "name": "codespede/simple-multi-threader",
+    "name": "muhammads92/simple-multi-threader",
     "type": "library",
     "require": {
         "opis/closure": "*"
@@ -7,13 +7,13 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Mahesh Warrier",
-            "email": "maheshs60@gmail.com"
+            "name": "Mahesh Warrier, Muhammad Samadov",
+            "email": "maheshs60@gmail.com, sam.muhammadali@gmail.com"
         }
     ],
     "autoload": {
         "psr-4": {
-            "cs\\simplemultithreader\\": "src/"
+            "muhammads92\\simplemultithreader\\": "src/"
         }
     }
 }

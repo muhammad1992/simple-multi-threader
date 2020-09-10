@@ -6,7 +6,7 @@ A simple PHP Multithreader extension which is ready for use without any setups o
 - No need to integrate any Queues or similar implementations
 - Write the code you want to process in the background in a closure(anonymous function) along with arguments(if any) and provide it to the extension. That's all.
 - Works with Core PHP(Normal PHP), Laravel and Yii2 out of the box.
-- Can work with any PHP Framework/Platform by just adding the required bootstrap code(See [here](https://github.com/codespede/simple-multi-threader#making-it-compatible-with-the-platform-you-use)).
+- Can work with any PHP Framework/Platform by just adding the required bootstrap code(See [here](https://github.com/muhammads92/simple-multi-threader#making-it-compatible-with-the-platform-you-use)).
 - Compatible with PHP installations in Windows and \*nix(Unix like)
 
 Installation
@@ -17,13 +17,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-composer require codespede/simple-multi-threader
+composer require muhammads92/simple-multi-threader
 ```
 
 or add
 
 ```json
-"codespede/simple-multi-threader": "*"
+"muhammads92/simple-multi-threader": "*"
 ```
 
 to the `require` section of your composer.json.
@@ -41,7 +41,7 @@ $jobId = $threader->thread(function($arguments){
 });
 
 ```
-That's all, the Threader will create the required job files in the specified `$jobsDir` and will start a PHP process in the background executing your code. The main thread(code above and after `$threader->thread...`) will run without waiting for the sub-thread(code in the closure) to finish. You will also get the started job's id(an md5 string) as the return value of the method `thread` which you can use for [debugging](https://github.com/codespede/simple-multi-threader#debugging).
+That's all, the Threader will create the required job files in the specified `$jobsDir` and will start a PHP process in the background executing your code. The main thread(code above and after `$threader->thread...`) will run without waiting for the sub-thread(code in the closure) to finish. You will also get the started job's id(an md5 string) as the return value of the method `thread` which you can use for [debugging](https://github.com/muhammads92/simple-multi-threader#debugging).
 
 Any data returned from the closure function will be logged to a file with name `smt_<jobId>.log` in the default directory specified for logs: `smt-logs`.
 
