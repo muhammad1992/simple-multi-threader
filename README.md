@@ -45,7 +45,6 @@ That's all, the Threader will create the required job files in the specified `$j
 
 Any data returned from the closure function will be logged to a file with name `smt_<jobId>.log` in the default directory specified for logs: `smt-logs`.
 
-For examples, [click here](https://github.com/codespede/simple-multi-threader/blob/master/EXAMPLES.md)
 
 Configurable Options
 --------------------
@@ -99,7 +98,7 @@ There are two ways to accomplish this:
    ```
    That's all! `executeWordpressBootStrap` will be executed before executing your code allowing Wordpress's native functions and usages in your code inside the Closure.
 
-   By doing this just once, the extension is now ready for executing any code(normal and platform related) anywhere in your application.
+   By doing this just once, the extension is now ready for executing any code(normal and platform related) anywhere in your Platform.
    You're also getting the freedom to override any additional logic defined in the `CommandHelper` class.
 
    **Pull Requests for supporting additional platforms are always welcome!**
