@@ -6,7 +6,7 @@
  * @version   1.0.0
  */
 
-namespace cs\simplemultithreader;
+namespace muhammads92\simplemultithreader;
 
 use Opis\Closure\SerializableClosure;
 use function Opis\Closure\{serialize as s};
@@ -41,7 +41,7 @@ class Threader
     /**
      * @var Fully qualified class name of the Helper to be used
      */
-    public $helperClass = "\\\\cs\\\\simplemultithreader\\\\CommandHelper";
+    public $helperClass = "\\\\muhammads92\\\\simplemultithreader\\\\CommandHelper";
 
     /**
      * Threader constructor.

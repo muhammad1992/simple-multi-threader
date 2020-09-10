@@ -6,7 +6,7 @@
  * @version   1.0.0
  */
 
-namespace cs\simplemultithreader;
+namespace muhammads92\simplemultithreader;
 
 /**
  * Class CommandHelper
